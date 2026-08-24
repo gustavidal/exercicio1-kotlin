@@ -11,8 +11,16 @@ fun main() {
     val num = readln().toInt()
     val status = if (num % 2 == 0) "PAR" else "ÍMPAR"
     println("$num é $status!")
+    println("")
 
     // 2 -) Crie uma variável numérica e exiba se o número é positivo, negativo ou zero
+    println("É NEGATIVO, ZERO OU POSITIVO?")
+    print("Digite um número: ")
+    val num1 = readln().toFloat()
+    val status1 = if (num1 < 0) "NEGATIVO" else if (num1 > 0) "POSITIVO" else "ZERO"
+    println("$num1 é $status1")
+    println("")
+
     // 3 -) Crie uma variável idade e diga "Criança" caso seja menor de 12, "Adolescente" entre 12 e 17, "Adulto" entre 18 e 59 e "Idoso" se 60 ou mais
     // 4 -) Crie uma variável numérica e exiba sua tabuada de 1 a 10
     // 5 -) Dado um array de números, calcule a soma de todos eles (ex: [1,2,3,4] → 10)
