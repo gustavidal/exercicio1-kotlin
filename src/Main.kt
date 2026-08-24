@@ -26,8 +26,8 @@ fun main() {
     print("Digite sua idade: ")
     val idade = readln().toInt()
     val statusIdade = when (idade) {
-        in idade .. 12 -> "CRIANÇA"
-        in 13 .. 17 -> "ADOLESCENTE"
+        in 0 .. 11 -> "CRIANÇA"
+        in 12 .. 17 -> "ADOLESCENTE"
         in 18 .. 59 -> "ADULTO"
         else -> "IDOSO"
     }
@@ -46,6 +46,15 @@ fun main() {
     println("")
 
     // 5 -) Dado um array de números, calcule a soma de todos eles (ex: [1,2,3,4] → 10)
+    println("SOMA DOS VALORES DE UM ARRAY")
+    val array = arrayOf(1, 2, 3, 4)
+    var somaArray = 0
+    for (i in array) {
+        somaArray += i
+    }
+    println(somaArray)
+    println("")
+
     // 6 -) Encontre o maior número dentro de um array (ex: [5,8,2,10,3] → 10)
     // 7 -) Crie uma variável numérica e exiba uma contagem regressiva até zero
     // 8 -) Dado um array de números, calcule somente a soma dos números pares (ex: [1,2,3,4] → 6)
