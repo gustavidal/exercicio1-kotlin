@@ -89,6 +89,13 @@ fun main() {
     println("")
 
     // 9 -) Crie uma função que receba um número e retorne o dobro dele
+    println(dobro(5))
+    println("")
+
     // 10 -) Faça uma função que receba 3 notas e retorne a média do aluno
     // 11 -) Faça uma função que receba uma temperatura Celsius (ponto flutuante) e retorne o valor em Fahrenheit (fórmula: F = C x 1.8 + 32)
+}
+
+fun dobro(numero: Int): Int {
+    return numero * 2
 }
