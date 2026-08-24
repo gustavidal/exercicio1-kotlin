@@ -68,6 +68,13 @@ fun main() {
     println("")
 
     // 7 -) Crie uma variável numérica e exiba uma contagem regressiva até zero
+    println("CONTAGEM REGRESSIVA")
+    print("Digite um número: ")
+    val contagem = readln().toInt()
+    for (i in contagem downTo 0) {
+        println(i)
+    }
+
     // 8 -) Dado um array de números, calcule somente a soma dos números pares (ex: [1,2,3,4] → 6)
     // 9 -) Crie uma função que receba um número e retorne o dobro dele
     // 10 -) Faça uma função que receba 3 notas e retorne a média do aluno
