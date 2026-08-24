@@ -93,9 +93,16 @@ fun main() {
     println("")
 
     // 10 -) Faça uma função que receba 3 notas e retorne a média do aluno
+    println(media(8.0, 7.0, 9.0))
+    println("")
+
     // 11 -) Faça uma função que receba uma temperatura Celsius (ponto flutuante) e retorne o valor em Fahrenheit (fórmula: F = C x 1.8 + 32)
 }
 
 fun dobro(numero: Int): Int {
     return numero * 2
+}
+
+fun media(nota1: Double, nota2: Double, nota3: Double): Double {
+    return (nota1 + nota2 + nota3) / 3
 }
