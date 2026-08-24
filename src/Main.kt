@@ -89,14 +89,28 @@ fun main() {
     println("")
 
     // 9 -) Crie uma função que receba um número e retorne o dobro dele
-    println(dobro(5))
+    println("O DOBRO DE UM NÚMERO")
+    println("Digite um número para ver seu dobro: ")
+    val dobro: Int = readln().toInt()
+    println(dobro(dobro))
     println("")
 
     // 10 -) Faça uma função que receba 3 notas e retorne a média do aluno
-    println(media(8.0, 7.0, 9.0))
+    println("MÉDIA ENTRE 3 NOTAS")
+    print("Digite a nota 1: ")
+    val nota1: Double = readln().toDouble()
+    print("Digite a nota 2: ")
+    val nota2: Double = readln().toDouble()
+    print("Digite a nota 3: ")
+    val nota3: Double = readln().toDouble()
+    println(media(nota1, nota2, nota3))
     println("")
 
     // 11 -) Faça uma função que receba uma temperatura Celsius (ponto flutuante) e retorne o valor em Fahrenheit (fórmula: F = C x 1.8 + 32)
+    println("CELSIUS PARA FAHRENHEIT")
+    print("Digite o valor de graus Celsius sem o símbolo: ")
+    val valor: Double = readln().toDouble()
+    println(celsiusParaFahrenheit(valor))
 }
 
 fun dobro(numero: Int): Int {
@@ -105,4 +119,8 @@ fun dobro(numero: Int): Int {
 
 fun media(nota1: Double, nota2: Double, nota3: Double): Double {
     return (nota1 + nota2 + nota3) / 3
+}
+
+fun celsiusParaFahrenheit(celsius: Double): Double {
+    return celsius * 1.8 + 32
 }
