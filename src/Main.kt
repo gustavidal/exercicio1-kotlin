@@ -56,6 +56,17 @@ fun main() {
     println("")
 
     // 6 -) Encontre o maior número dentro de um array (ex: [5,8,2,10,3] → 10)
+    println("MAIOR VALOR DO ARRAY")
+    val arrayMaior = arrayOf(5, 8, 2, 10, 3)
+    var maior = arrayMaior[0]
+    for (i in arrayMaior) {
+        if (i > maior) {
+            maior = i
+        }
+    }
+    println("O maior número é $maior")
+    println("")
+
     // 7 -) Crie uma variável numérica e exiba uma contagem regressiva até zero
     // 8 -) Dado um array de números, calcule somente a soma dos números pares (ex: [1,2,3,4] → 6)
     // 9 -) Crie uma função que receba um número e retorne o dobro dele
