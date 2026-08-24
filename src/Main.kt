@@ -74,8 +74,20 @@ fun main() {
     for (i in contagem downTo 0) {
         println(i)
     }
+    println("")
 
     // 8 -) Dado um array de números, calcule somente a soma dos números pares (ex: [1,2,3,4] → 6)
+    println("SOMA DOS NÚMEROS PARES")
+    val arrayPares = arrayOf(1, 2, 3, 4)
+    var somaPares = 0
+    for (i in arrayPares) {
+        if (i % 2 == 0) {
+            somaPares += i
+        }
+    }
+    println(somaPares)
+    println("")
+
     // 9 -) Crie uma função que receba um número e retorne o dobro dele
     // 10 -) Faça uma função que receba 3 notas e retorne a média do aluno
     // 11 -) Faça uma função que receba uma temperatura Celsius (ponto flutuante) e retorne o valor em Fahrenheit (fórmula: F = C x 1.8 + 32)
