@@ -22,6 +22,18 @@ fun main() {
     println("")
 
     // 3 -) Crie uma variável idade e diga "Criança" caso seja menor de 12, "Adolescente" entre 12 e 17, "Adulto" entre 18 e 59 e "Idoso" se 60 ou mais
+    println("DEFINIÇÃO DE IDADE")
+    print("Digite sua idade: ")
+    val idade = readln().toInt()
+    val statusIdade = when (idade) {
+        in 0 .. 12 -> "CRIANÇA"
+        in 13 .. 17 -> "ADOLESCENTE"
+        in 18 .. 59 -> "ADULTO"
+        else -> "IDOSO"
+    }
+    println("Você possuindo $idade anos é considerado(a) um(uma) $statusIdade!")
+    println("")
+
     // 4 -) Crie uma variável numérica e exiba sua tabuada de 1 a 10
     // 5 -) Dado um array de números, calcule a soma de todos eles (ex: [1,2,3,4] → 10)
     // 6 -) Encontre o maior número dentro de um array (ex: [5,8,2,10,3] → 10)
