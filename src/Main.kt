@@ -119,9 +119,13 @@ fun dobro(numero: Int): Int {
 }
 
 fun media(nota1: Double, nota2: Double, nota3: Double): Double {
-    return (nota1 + nota2 + nota3) / 3
+    val media = (nota1 + nota2 + nota3) / 3
+    val result = String.format("%.2f", media).replace(",", ".")
+    return result.toDouble()
 }
 
 fun celsiusParaFahrenheit(celsius: Double): Double {
-    return celsius * 1.8 + 32
+    val graus = celsius * 1.8 + 32
+    val result = String.format("%.2f", graus).replace(",", ".")
+    return result.toDouble()
 }
