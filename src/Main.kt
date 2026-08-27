@@ -73,6 +73,7 @@ fun main() {
     val contagem = readln().toInt()
     for (i in contagem downTo 0) {
         println(i)
+        Thread.sleep(1000)
     }
     println("")
 
@@ -90,7 +91,7 @@ fun main() {
 
     // 9 -) Crie uma função que receba um número e retorne o dobro dele
     println("O DOBRO DE UM NÚMERO")
-    println("Digite um número para ver seu dobro: ")
+    print("Digite um número para ver seu dobro: ")
     val dobro: Int = readln().toInt()
     println(dobro(dobro))
     println("")
